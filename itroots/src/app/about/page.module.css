@@ -1,0 +1,416 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+}
+
+/* Hero */
+.hero {
+    background: var(--gradient-hero);
+    height: 280px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: var(--text-4xl);
+    color: var(--white);
+    margin-bottom: var(--space-4);
+}
+
+.hero p {
+    font-size: var(--text-lg);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Section Header */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.sectionHeader h2 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-3);
+}
+
+.sectionHeader p {
+    font-size: var(--text-lg);
+    color: var(--gray);
+}
+
+/* Mission Section */
+.missionSection {
+    padding: var(--space-16) 0;
+    background: var(--white);
+}
+
+.missionGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+}
+
+.missionCard {
+    padding: var(--space-8);
+    background: var(--off-white);
+    border-radius: var(--radius-xl);
+}
+
+.missionIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: var(--gradient-orange);
+    color: var(--white);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-5);
+}
+
+.missionCard h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+}
+
+.missionCard p {
+    font-size: var(--text-base);
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+/* Values Section */
+.valuesSection {
+    padding: var(--space-16) 0;
+    background: var(--off-white);
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+}
+
+.valueCard {
+    text-align: center;
+    padding: var(--space-6);
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.valueCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.valueIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(8, 129, 236, 0.1);
+    color: var(--primary-blue);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-4);
+}
+
+.valueCard h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+}
+
+.valueCard p {
+    font-size: var(--text-sm);
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Timeline Section */
+.timelineSection {
+    padding: var(--space-16) 0;
+    background: var(--white);
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+.timelineItem {
+    padding: var(--space-6);
+    background: var(--off-white);
+    border-radius: var(--radius-xl);
+    border-left: 4px solid var(--accent-orange);
+}
+
+.timelineYear {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: 800;
+    color: var(--accent-orange);
+    margin-bottom: var(--space-3);
+}
+
+.timelineContent h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+}
+
+.timelineContent p {
+    font-size: var(--text-sm);
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Team Section */
+.teamSection {
+    padding: var(--space-16) 0;
+    background: var(--off-white);
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+}
+
+.teamCard {
+    text-align: center;
+    padding: var(--space-6);
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.teamAvatar {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-teal);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    margin: 0 auto var(--space-4);
+}
+
+.teamCard h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-1);
+}
+
+.teamRole {
+    display: block;
+    font-size: var(--text-sm);
+    color: var(--accent-orange);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+}
+
+.teamCard p {
+    font-size: var(--text-sm);
+    color: var(--gray);
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: var(--space-16) 0;
+    background: var(--gradient-hero);
+    text-align: center;
+    color: var(--white);
+}
+
+.ctaSection h2 {
+    font-size: var(--text-3xl);
+    color: var(--white);
+    margin-bottom: var(--space-3);
+}
+
+.ctaSection p {
+    font-size: var(--text-lg);
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--space-8);
+}
+
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+}
+
+.ctaPrimary {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-8);
+    background: var(--gradient-orange);
+    color: var(--white);
+    font-size: var(--text-base);
+    font-weight: 600;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.ctaPrimary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+    color: var(--white);
+}
+
+.ctaSecondary {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-4) var(--space-8);
+    background: transparent;
+    color: var(--white);
+    font-size: var(--text-base);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.ctaSecondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .missionGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teamGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .teamGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .missionCard,
+    .valueCard,
+    .teamCard {
+        padding: var(--space-5);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-4);
+    }
+
+    .hero {
+        padding: 80px 0 40px;
+        min-height: 200px;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: var(--text-2xl);
+    }
+
+    .hero p {
+        font-size: var(--text-base);
+        padding: 0 var(--space-4);
+    }
+
+    .sectionHeader h2 {
+        font-size: var(--text-xl);
+    }
+
+    .sectionHeader p {
+        font-size: var(--text-sm);
+    }
+
+    .missionSection,
+    .valuesSection,
+    .timelineSection,
+    .teamSection {
+        padding: var(--space-8) 0;
+    }
+
+    .missionGrid,
+    .valuesGrid,
+    .timeline,
+    .teamGrid {
+        gap: var(--space-4);
+    }
+
+    .missionIcon,
+    .valueIcon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .missionCard h2 {
+        font-size: var(--text-xl);
+    }
+
+    .timelineYear {
+        font-size: var(--text-2xl);
+    }
+
+    .teamAvatar {
+        width: 64px;
+        height: 64px;
+        font-size: var(--text-xl);
+    }
+
+    .ctaSection {
+        padding: var(--space-10) 0;
+    }
+
+    .ctaSection h2 {
+        font-size: var(--text-xl);
+    }
+
+    .ctaPrimary,
+    .ctaSecondary {
+        padding: var(--space-3) var(--space-6);
+        font-size: var(--text-sm);
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
